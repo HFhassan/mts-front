@@ -1,0 +1,249 @@
+<header>
+
+  <style>
+  body{
+    font-family: 'Times New Roman', Times, serif
+  }
+    html {
+      height: 100%;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("https://cdn1.vectorstock.com/i/1000x1000/28/00/stock-exchange-background-vector-27122800.jpg");
+      /* Full height */
+      height: auto;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .form-white.input-group>.form-control:focus {
+      border-color: #fff;
+      box-shadow: inset 0 0 0 1px #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-link:focus {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  </style>
+  <!--    <br>
+  
+    <div class ="container">
+  
+    <div  class = "card" style="background-color: steelblue;">
+      <h2 class="" style="padding-left: 10px;" > RMS</h2>
+      <h4 class="" style="padding-left: 10px;" > National Clearing Company of Pakistan ltd.</h4>
+    </div>
+    </div> -->
+  <div class="container">
+
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-sm navbar-dark 
+
+" style="background-color: rgb(29, 29, 83);">
+  <div class="container-fluid mb-0 mt-0">
+    <span class="navbar-brand" href="#">
+      <div class="col-md-7 col-lg-5 d-none d-md-block ml-5 ">
+        <img href="#" src="../../assets/images/NCCPL Logo (original) - white footer.png" alt="nccpl-logo"
+              class="img-fluid" style="border-radius: 0 0 0 0; height: 37px; width: 80px;"  />
+      </div>
+    </span>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <span class="nav-link" href="#" (click)="Report();">Forms</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" href="#" (click)="Fecth();">Reports</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" href="#">Procedures</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" href="#">Exposure</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" href="#">Colletrals</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" href="#">Process</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" href="#">Job Queue</span>
+        </li>
+      </ul>
+      <ul class="navbar-nav d-flex flex-row ms-auto me-3" style="margin-left: 40%;">
+        <!-- <li class="nav-item me-3 me-lg-0 dropdown">
+          <span class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fas fa-plus"></i>
+          </span>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><span class="dropdown-item" href="#">Action</span></li>
+            <li><span class="dropdown-item" href="#">Another action</span></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <span class="dropdown-item" href="#">Something else here</span>
+            </li>
+          </ul>
+        </li> -->
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="22" alt=""
+              loading="lazy" />
+          </span>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+            <span class="dropdown-item" href="#">Profile</span>
+            <span class="dropdown-item" href="#">Setting</span>
+            <span class="dropdown-item" href="#">Log out</span>
+          </div>
+        </li>
+        <!-- <li class="nav-item me-3 me-lg-0 dropdown  " >
+          <span class="nav-link dropdown-toggle " href="#" id="navbarDropdown1" role="button" data-mdb-toggle="dropdown"
+            aria-expanded="false">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="22"
+              alt="" loading="lazy" />
+          </span>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+            <li><span class="dropdown-item" href="#">Action</span></li>
+            <li><span class="dropdown-item" href="#">Another action</span></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <span class="dropdown-item" href="#">Something else here</span>
+            </li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<body class="" style=" background-color: red; background-image: linear-gradient(rgb(200, 200, 240), white)">
+  <br>
+  <div class="container " *ngIf="!success">
+    <div class="row align-items-center">
+      <div class="col-lg-12 px-lg-4 mb-5">
+        <div class="card">
+          <div class="card-header px-lg-5">
+            <div class="card-heading text-primary text-primary text-center ">
+              <h3 style="letter-spacing: 1px; font-family:Times New Roman, Times, serif; color:  darkblue;">TEST REPORT
+              </h3>
+            </div>
+          </div>
+          <div class="card-body p-lg-5">
+            <h3 class="mb-4" style="letter-spacing: 1px; font-family:Times New Roman, Times, serif; color:  darkblue;">
+              Enter Details</h3>
+            <!-- <form  id = "addForm"  (ngSubmit)="onAddEmployee()">-->
+            <div class="form-group">
+              <label style="letter-spacing: 1px; font-family:Times New Roman, Times, serif; color:  darkblue;">CM
+                ID</label>
+              <input type="text" [(ngModel)]="this.cmId" class="form-control" id="cmId" placeholder="09272" required>
+            </div>
+            <div class="form-group">
+              <label style="letter-spacing: 1px; font-family:Times New Roman, Times, serif; color:  darkblue;">CM
+                NAME</label>
+              <input type="text" class="form-control" id="cmName" placeholder="CM Name">
+            </div>
+            <div class="form-group">
+              <label
+                style="letter-spacing: 1px; font-family:Times New Roman, Times, serif; color:  darkblue;">SYMBOL</label>
+              <input type="text" class="form-control" id="symbol" placeholder="symbol">
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" id="add-employee-form" class="btn btn-secondary"
+                style="background-color:rgb(148, 148, 235) ; color: white;" (click)="Report();"
+                data-dismiss="modal">Close</button>
+              <button type="submit" (click)="getReport()" class="btn btn-primary"
+                style="background-color:darkblue ; color: white;">Fetch Report</button>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="card-footer px-lg-5 py-lg-4">
+
+      <div class="text-sm text-muted">privacy policy nccpl pakistan</div>
+    </div>
+  </div>
+
+  <div id="pdfTable" #pdfTable class="container" *ngIf="success">
+    <div class="card">
+      <h2 class="text-center">National Clearing Company of Pakistan</h2>
+      <h3 class="text-center"> Sample report</h3>
+
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4"><b>Date:{{now }}</b><br> <br><b>User: Admin</b></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+
+        </div>
+        <table class="table table-striped" id="excelReport">
+          <thead>
+            <tr>
+            <th scope="col">Cm Id</th>
+            <th scope="col">CM Name</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Margin</th>
+            <th scope="col">Exposure</th>
+            <th scope="col">Exposure Demand</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let record of records">
+              <td> {{ record.cmId}}</td>
+              <td> {{ record.cmName}}</td>
+              <td> {{ record.symbol}}</td>
+              <td> {{ record.margin}}</td>
+              <td> {{ record.exposure}}</td>
+              <td> {{ record.exposureDemand}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container" *ngIf="success">
+    <div class="row">
+      <div class="col-8">
+        <button class="btn btn-warning" (click)="Back();">Back</button>
+      </div>
+      <div>
+        <button class="btn btn-primary"  (click)="exportexcel();">Export To Excel</button>
+      </div>
+      <div class="col-1"></div>
+      <div>
+        <button class="btn btn-primary "  (click)="downloadAsPDF();">Export To PDF</button>
+      </div>
+    </div>
+  </div>
+</body>

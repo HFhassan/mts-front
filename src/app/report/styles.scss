@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-balham.css';
+
+html, body {
+   height: 100%;
+//   width: 92%;
+   padding: 5px;
+   box-sizing: border-box;
+   -webkit-overflow-scrolling: touch;
+}
+.ag-theme-balham {
+   --ag-background-color: rgb(221, 221, 221);
+   --ag-header-background-color: black;
+   
+}
+/* change the font style of a single UI component */
+.ag-theme-balham .ag-header-cell-label {
+   color: rgb(241, 234, 234);
+   font-size: large;
+   
+}

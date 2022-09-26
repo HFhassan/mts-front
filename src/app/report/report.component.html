@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+  <div style="text-align: center;" class="">
+    <h2>National Clearing Company Of Pakistan</h2>
+    <h4>Demand of Payment Report</h4>
+    <h4>Margining Trading System (MTS)</h4>
+  </div>
+  <div class="row">
+
+    <div class="col-6">
+      <p><span><b>Participant Type:</b></span> <span>ALL</span></p>
+      <p><span><b>Participant Name:</b></span> <span>JS GLOBAL CAPITAL LIMITED</span></p>
+      <p><span><b>Participant ID:</b></span> <span>149</span></p>
+    </div>
+    <div class="col-6" style="text-align: right;">
+      <p><span><b>Page:</b></span><span>&nbsp;&nbsp;1&nbsp;&nbsp;of&nbsp;&nbsp;1</span></p>
+      <p><span><b>Report Run Date:</b></span><span>&nbsp;&nbsp;06-SEP-2022</span></p>
+      <p><span><b>Time:</b></span><span>&nbsp;&nbsp;14:20:40</span></p>
+
+    </div>
+  </div>
+    <div style="text-align: center;">
+      <u>
+        <h5>Demand of Payment Under Margining Trading System MTS</h5>
+      </u>
+    </div>
+    <div style="text-align: center;">
+      <h6>"The National Clearing Company of Pakistan Limited Regulations 2003"</h6>
+    </div>
+    <div>Dear Sir,<br>
+      We have to inform you that your outstanding business position is as under:</div>
+
+  
+      <div class="container">
+      <!-- Button to clear selection -->
+      <button (click)="clearSelection()">Clear Selection</button>
+
+      <!-- AG Grid Angular Component -->
+      <ag-grid-angular style="width: 100%; height: 400px; " class="ag-theme-balham" [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef" [rowData]="rowData$ | async" [rowSelection]="'multiple'" [animateRows]="true"
+      (gridReady)="onGridReady($event)" (cellClicked)="onCellClicked($event)"></ag-grid-angular>    </div>
+    <div>You are, therefore, required to send us your deposite as indicated at s.no.14,15&16 in approved form of collateral in accordance with NCCPL regulations.</div><br>
+  <div>This amount has been determind upto <input type="text"></div><br>
+  <div>which may please be paid to NCCPL latest ny today "as per Designated Time schedule (DTS)" failling which
+      appropriate action shall be taken.</div><br>
+      <p><b>Note:1."The Deposite in share will be accepted in marketable lots only"</b></p>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2.This Deposite in system generated notice and it does not require signatures.</b></p>
+ 
+  <!-- <div style="text-align: center;"><b>End of Report</b> </div> -->
+  </div>
+</body>
+
+</html>

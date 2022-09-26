@@ -1,0 +1,157 @@
+<!-- <div class="page-holder align-items-center py-4 bg-gray-100 vh-50"  *ngIf="loginUser" >
+
+
+
+ 
+
+  <
+  <div class="container  gradient-custom"  >
+    <div class="row align-items-center gradient-custom" style="margin: 10px;">
+      
+      <div class="col col-lg-4"></div>
+
+          <div class="card-body gradient-custom  p-lg-1 col-lg-4"  >
+            <div class="card">
+            <h3 class="mb-4" style="text-align:center ;">MTS hamza Login</h3>
+              <div class="form-floating mb-1" style="margin-bottom:10px ;" >
+                <input class="form-control" id="floatingInput" type="text"   [(ngModel)]="this.name"    placeholder="user name" required>
+                <label for="floatingInput" style="display:none ;">User Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control" id="floatingPassword"  [(ngModel)]="this.password" type="password"  placeholder="password" required>
+<label for="floatingPassword">Password</label>              
+</div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                <label class="form-check-label" for="remember">Remember me</label>
+
+              </div>
+              <button class="btn btn-primary"  (click)="Next();" type="submit">Submit</button>
+
+          </div>
+         
+
+    <div class="col col-lg-2"></div>
+
+  </div>
+</div>
+</div>
+
+</div>
+
+               <button class="btn btn-success"   (click)="Next();"> Login1 </button> -->
+<style>
+  body {
+    font-family: 'Times New Roman', Times, serif;
+
+    height: 5000px;
+    /* Make this site really long */
+    width: 5000px;
+    /* Make this site really wide */
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+
+  html {
+    height: 100%;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("../../assets/images/bk_image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Full height
+    max-height: auto;
+    max-width: auto;
+    /* Center and scale the image nicely */
+
+    background-size: cover;
+  }
+
+  .mts-text {
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-bottom: -15%;
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif
+  }
+</style>
+
+
+
+<!-- <section class="vh-100 bg  bg-image  height: 100vh" style="background-color: darkblue;" *ngIf="loginUser"> -->
+<section *ngIf="loginUser">
+  <div class="bg-image bg" style="background-image: url('../../assets/images/bk_image.jpg');
+         height: 100vh">
+
+    <div class="container py-0 h-100 " >
+      <div class="row d-flex justify-content-center align-items-center h-100" >
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;" >
+            <div class="row g-0 ml-5 " >
+              <div class="col-md-6 col-lg-5 d-none d-md-block  " style="margin-top: 9% ">
+                <img src="https://askarisecurities.com.pk/wp-content/uploads/2020/06/nccpl-logo.jpg" alt="login form"
+                  class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+              </div>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center"  style="margin-top:   -3%;">
+                <div class="card-body p-4 p-lg-5 text-black">
+
+                  <!--  <form>-->
+
+                  <div class="d-flex align-items-center   pb-1" style="margin-bottom: 20%">
+                    <div class=" mts-text ">
+                      <span class="h1 fw-bold ">MTS </span>
+                    </div>
+                  </div>
+
+                  <h5 class=" h3 mb-0 pb-3 fw-bold  "
+                    style="letter-spacing: 1px; font-family:Times New Roman, Times, serif; color:  darkblue; margin-left: 5%;">Sign into
+                    your account</h5>
+
+                  <div class="form-outline  mb-3 col-10">
+
+                    <input type="email" id="form2Example17" class="form-control form-control-sm fas fa-camera fa-xs"
+                      [(ngModel)]="this.name" placeholder="Admin" required />
+
+                    <!-- <label class="form-label" for="form2Example17">User Name</label> -->
+                  </div>
+
+                  <div class="form-outline mb-3 col-10">
+                    <input type="password" id="form2Example27" class="form-control form-control-sm"
+                      [(ngModel)]="this.password" placeholder="Password" />
+                    <!-- <label class="form-label" for="form2Example27">Password</label> -->
+                  </div>
+                  <div class="form-check mb-3" style=" margin-left: 5%;">
+                    <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                    <label class="form-check-label" for="remember">Remember me</label>
+
+                  </div>
+
+
+                  <div class="pt-1 mb-4 col-10">
+                    <button class="btn  btn-sm btn-block   " style="background-color:darkblue ; color: white;"
+                      type="button" (click)="Next();">Login</button>
+                  </div>
+
+                  <div style=" margin-left: 5%;"><a class="small text-muted" href="#!">Forgot password?</a></div>
+                  <!-- <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!" -->
+
+                  <div style=" margin-left: 5%;"> <a href="#!" class="small text-muted">Terms of use.</a>
+                    <a href="#!" class="small text-muted"> Privacy policy</a>
+                  </div>
+                  <!--       </form>-->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<router-outlet></router-outlet>
